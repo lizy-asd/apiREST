@@ -7,4 +7,8 @@ import java.util.List;
 public interface ProductosService {
 
     List<ProductosEntity> serviciosDeProductos();
+
+    ProductosEntity productosId(String id);
+
+    Integer insertProductos(ProductosEntity productosEntity);
 }

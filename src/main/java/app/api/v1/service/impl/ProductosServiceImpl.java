@@ -18,4 +18,16 @@ public class ProductosServiceImpl implements ProductosService {
     public List<ProductosEntity> serviciosDeProductos() {
         return productosMapper.query();
     }
+
+    @Override
+    public ProductosEntity productosId(String id) {
+        return productosMapper.productosId(id);
+    }
+
+    @Override
+    public Integer insertProductos(ProductosEntity productosEntity) {
+        return productosMapper.insertProductos(productosEntity);
+    }
+
+
 }
